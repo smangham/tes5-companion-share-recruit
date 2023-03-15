@@ -1,0 +1,147 @@
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\froman Arial;}{\f1\froman\fcharset0 Arial;}{\f2\froman\fprq2\fcharset0 Times New Roman;}{\f3\froman\fcharset0 Times New Roman;}{\f4\froman Times New Roman;}{\f5\fnil\fcharset0 Arial;}{\f6\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;\red100\green107\blue134;\red155\green0\blue211;\red0\green176\blue80;\red0\green77\blue187;\red255\green192\blue0;\red128\green100\blue162;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\nowidctlpar\lang2057\kerning1\f0\fs32 Companion Share & Recruit, v1.\f1 2\f2\fs24\par
+\f0\fs20 By TheTalkieToaster\f2\fs24\par
+\f0\fs20\par
+\b Description\b0\f2\fs24\par
+\f0\fs20 Ever wanted to bring your favourite NPCs out adventuring with you? Wished your followers did more than just act as meatshields, and were easy to order around? Wanted a D&D-esque party, where everyone has their own role and plays off each other? Just wanted an easy way of making new companions? CSR is probably for you!\f2\fs24\par
+\f0\fs20\par
+CSR adds a handful of perks to the Speech tree allowing you to persuade, befriend and recruit any unique, named NPC in the game- getting them to follow you, carry your stuff, contribute special abilities and so on. Take extra perks to grow your party, make them more effective, grant them new abilities, and then go on to save Skyrim with your buddies.\f2\fs24\par
+\f0\fs20\par
+\b Installation\b0\f2\fs24\par
+\f0\fs20 If you're not using Steam, copy the esp and bsa files into Skyrim\\Data. If using a mod manager, check in the launcher.\f2\fs24\par
+\b\f0\fs20\par
+\cf1 RECOMMENDED - \cf2\b0 If you have issues with the voiceless dialogue going too fast, I recommend using the mod \i Fus Ro Doh - Silent Voice\i0  as well\f1 : \cf0{\field{\*\fldinst{HYPERLINK "http://skyrim.nexusmods.com/mods/14884"}}{\fldrslt{\ul\cf3 http://skyrim.nexusmods.com/mods/14884}}}\f2\fs24\par
+\cf1\b\f1\fs20 COMPATIBILITY \cf2\b0 - If you use another mod altering the Speech tree, as long as you have SKSE installed you can take the perks using the \cf4\i Tome of Companionship \cf2\i0 in Jorrvaskr. SKSE is not otherwise required.\b\f0\par
+\par
+\b0 You should be able to get started right then and there- as long as you're not totally clueless and look at the perks menu check out any new dialogue options it should hopefully be obvious. If you want comprehensive instructions on what's in the mod and how you do everything, read the Contents section.\cf0\f2\fs24\par
+\cf2\b\f0\fs20\par
+Contents\par
+\b0\f1\fs32 PERKS\cf0\f2\fs24\par
+\cf2\f0\fs20 With Companion Share & Recruit, you can recruit NPCs to follow you, helping you in battle, carrying your things, and using powerful special abilities. You can get these things via a bunch of perks:\cf0\f2\fs24\par
+\pard\nowidctlpar\fi-360\li720\sl100\slmult0\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Life of the Party \tab\tab\tab\cf5\b0\i Requires Haggle\i0\line\cf2 Allows\cf5  \cf2 you to recruit a party of friendly NPCs, with each of the 5 ranks increasing the number by 1. It unlocks the 'Chat' topic, letting you gift things to NPCs to befriend them, borrow items from your friends\f1  (at risk of their disapproval)\f0 , or just ask for information about people.\par
+\f1\tab\par
+\tab Once an NPC is your friend, you can ask them to join you on your adventures! \f0\par
+\cf0\f2\fs24\par
+\pard\nowidctlpar\fi-436\li720\sl100\slmult0\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Aura of Courage\tab\tab\tab\cf5\b0\i Requires Speechcraft 40, Life of the Party\i0\line\cf2 Increases your\f1  recruited\f0  followers' Courage by 2 ranks-from Cowardly to Average, Cautious to Courageous, and Average to Fearless.\f1  \line Increases time to bleed out by 15 seconds.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Aura of Inspiration\tab\tab\tab\cf5\b0\i Requires Speechcraft 60, Aura of Courage\i0\line\cf2 Increases your nearby followers' rates of Health and Stamina regeneration.\cf0\f2\fs24\par
+\pard\nowidctlpar\sl100\slmult0\cf2\f0\fs20\par
+\pard\nowidctlpar\fi-436\li720\sl100\slmult0\cf0\kerning0\f3\fs24\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Tutor\tab\tab\tab\tab\tab\cf5\b0\i Requires Speechcraft 40, Life of the Party\i0\line\cf2 Allows you to tutor your\f1  recruited\f0  followers using the Experience dialogue option, to make their skills raise with level (if they don't by default), and teach followers spells.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Advanced Tutor\tab\tab\tab\cf5\b0\i Requires Speechcraft 60, Tutor\i0\line\cf2 Adds perks to Tutored \f1 recruited \f0 followers when they meet the skill requirements\f1  for them.\f0\line\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Educator\tab\tab\tab\tab\cf5\b0\i Requires Speechcraft 50, Life of the Party\i0\line\cf2 Adds a Train as Profession option to the 'Chat' topic, letting you train profession-less friends to give them special abilities \f1 when recruited as followers \f0 (full list below).\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Dragonborn Sage\tab\tab\tab\cf5\b0\i Requires Speechcraft 75, Educator\cf2\i0\line Adds a Teach Shout option to the 'Chat' topic, letting you spend Dragon Souls to grant \f1 a range of \f0 shouts to friends\f1  (Disarm, Unrelenting Force, Fire Breath or Frost Breath).\f0\par
+\par
+\cf0\kerning0\f3\fs24\'b7\f4\tab\cf2\kerning1\b\f1\fs20 Perfect Teamwork\tab\f0\tab\tab\cf5\b0\i Requires Speechcraft 40, Life of the Party\i0\line\cf2\f1 Reduces damage you deal to followers with weapons and Destruction spells by 80%\f0 .\f1  Prevents followers from being affected by Fear, Fury or Paralysis spells.\cf0\f2\fs24\par
+\pard\nowidctlpar\cf2\f0\fs20\par
+\f1\fs32 ORDERS\cf0\f2\fs24\par
+\cf2\f0\fs20 You can order your companions to:\cf0\f2\fs24\par
+\pard\nowidctlpar\fi-360\li720\kerning0\f5\fs20\'b7\tab\cf2\kerning1\b Follow & Wait \cf0\b0\par
+\kerning0\'b7\tab\cf2\kerning1\b Sandbox\cf0\b0\par
+\kerning0\'b7\tab\cf2\kerning1\b Wait at Location\b0  and they'll head to where you look.\cf0\par
+\kerning0\'b7\tab\cf2\kerning1\b Go Passive\b0  and only join combat after you get attacked.\cf0\par
+\kerning0\'b7\tab\cf2\kerning1\b Go Aggressive \b0 and attack any hostiles they see.\cf0\par
+\kerning0\'b7\tab\cf2\kerning1\b Deploy\b0  in one place. They won't respond to group orders whilst deployed.\par
+\cf0\kerning0\'b7\tab\b Do Favours\b0  (hold down Activate whilst ordering to jump straight to Favours)\kerning1\f2\fs24\par
+\pard\nowidctlpar\cf2\f0\fs20 All these orders can be given via dialogue or the power \cf6\i Order Companions\i0  \cf2 you'll get given- when you use the \cf6\i Order \cf2\i0 power, all your Following and Waiting companions will obey. If you use \cf6\i Order \cf2\i0  whilst looking at a single companion, you can order them only instead. Your companions will also appear on the world map- just check the 'Party Member' entries under 'Misc Quests'.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\f1\fs32 CARE & MAINTENANCE\cf0\f2\fs24\par
+\cf2\f1\fs20 NPCs will continue to follow you as long as they're your friend. Gifting equipment to them will continue to increase their opinion of you, but taking their stuff risks their disapproval. If an NPC drops below 'Friend' status, you get the chance to offer a gift to placate them or they'll leave.\par
+\par
+You can teach companions using the chat topic, and you'll also get access to the "Behaviour" topic, that'll let you alter how they act in combat- whether they use magic or bows, are aggressive or passive, and whether (if capable) they'll heal friends.\par
+\par
+If an NPC starts bleeding out in combat you'll get a message- \cf1 "NPC_NAME is bleeding out!"\cf2 . \par
+You or an ally can help them recover them by using a healing spell on them or activating them if you have any potions in your inventory to give. \par
+\pard{\pntext\f6\'B7\tab}{\*\pn\pnlvlblt\pnf6\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li720 If left unhelped for\b  15 seconds\b0 , an NPC will reduce their disposition towards you-\f0\line\cf1\f1 "NPC_NAME despairs!"\cf2\f0\par
+\f1{\pntext\f6\'B7\tab}If left unhelped for \b 30 seconds\b0 , an NPC will die! (Or storm off in a huff, if essential)\f0\par
+\f1{\pntext\f6\'B7\tab}After being helped up, NPCs can't recover again for \b 20 seconds\b0 . If they do go down again, healing during this time will just reset their bleed timer.\f0\par
+\pard\nowidctlpar\f1 NPCs will recover automatically after a combat ends. \par
+\par
+Unlike the default 'Protected' companions, you can't accidentally kill them by last-hitting them- recruited followers can \i only \i0 die after bleeding out, and you will \i always\i0  recieve a warning.\f0\par
+\par
+\f1\fs32 PROFESSIONS\cf0\f2\fs24\par
+\cf2\f0\fs20 Many NPCs will fall into one of the iconic professions below, and have some sort of powerful special ability. Abilities are intended to encourage you to play with a mixed group of allies. There's 5 types of class:\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\b Defender\cf0\b0\f2\fs24\par
+\cf2\f0\fs20 These professions focus on protecting allies.\cf0\f2\fs24\par
+\pard\nowidctlpar\fi-360\li720\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Companion \b0\endash\b  \b0\i Challenge! \endash\i0  Forces targets they strike to duel them.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Guard \b0\endash\b  \b0\i Stop Right There, Criminal Scum \endash  \cf1\i0 Nearby enemies \cf2 are greatly slowed.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Legionary\b0  \endash  \i Shield Wall \endash  \cf7\i0 Nearby allies \cf2 have increased armour.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Housecarl\b0  \endash  \i Housecarl's Burden \endash  \i0 Pins targets they strike in place.\cf0\f2\fs24\par
+\pard\nowidctlpar\cf2\f0\fs20\par
+\b Striker\cf0\b0\f2\fs24\par
+\cf2\f0\fs20 These professions focus on dealing damage.\cf0\f2\fs24\par
+\pard\nowidctlpar\fi-360\li720\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Assassin \b0\endash\b  \b0\i Sneak Attack \endash  \i0 Deals extra damage to targets they hit from the side or rear.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Stormcloak \b0\endash\b  \b0\i Nationalist Fury \endash  \cf7\i0 Nearby allies \cf2 deal extra damage to targets of other races.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Thief\b0  \endash  \i Mug \endash\i0  Steals potions & poisons from targets they hit to use themselves.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Tribal Orc\b0  \endash  \i Grudge \endash  \i0 Deals more damage each time an ally goes down.\cf0\f2\fs24\par
+\pard\nowidctlpar\cf2\f0\fs20\par
+\b Controller\cf0\b0\f2\fs24\par
+\cf2\f0\fs20 These professions focus on providing disadvantages to enemies and advantages to allies.\cf0\f2\fs24\par
+\pard\nowidctlpar\fi-360\li720\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Forsworn \b0\endash\b  \b0\i Onslaught \endash  \i0 Targets they hit are less able to block & power attack.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Greybeard \b0\endash\b  \b0\i Earthshaking Power \endash  \cf7\i0 Nearby allies \cf2 can stagger foes more easily.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Mage\b0  \endash  \i Arcane Binding \endash\cf1\i0  Nearby enemies\cf2  recharge the party's weapons on death. Mages can also be given orders to keep up a Light spell at night and indoors.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Thalmor\b0  \b Inquisitor\b0  \endash  \i Terror \endash  \cf1\i0 Nearby humanoid enemies\cf2  have reduced confidence.\cf0\f2\fs24\par
+\pard\nowidctlpar\cf2\f0\fs20\par
+\b Leader\cf0\b0\f2\fs24\par
+\cf2\f0\fs20 These professions focus on keeping the rest of your party on their peak performance.\cf0\f2\fs24\par
+\pard\nowidctlpar\fi-360\li720\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Alchemist \endash  \b0\i Dispensing Chemist \endash  \i0 Heals groups of wounded allies in combat with potions.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Bard \b0\i\endash\b\i0  \b0\i Valour of the Edda \endash  \cf7\i0 Nearby allies \cf2 regain health & fatigue on attacking enemies.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Officer\b0  \endash  \i Inspiring Presence \endash\cf7\i0  Nearby allies \cf2 have increased health & fatigue regeneration. \cf6 (Officers include Jarls and military officers)\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Priest\b0  \i\endash\i0  \i Blessings of the Gods \endash  \i0 Heals wounded allies in combat with spells.\cf0\f2\fs24\par
+\pard\nowidctlpar\cf2\f0\fs20\par
+\b Supporter\cf0\b0\f2\fs24\par
+\cf2\f0\fs20 These professions aren't really much use as adventurers, but they can make useful pack mules.\cf0\f2\fs24\par
+\pard\nowidctlpar\fi-360\li720\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Commoner \b0\i\endash  Strong Back \endash  \i0 Has an extra 200 carry weight. \line\cf6 (Commoners include Farmers and Miners)\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Hunter \b0\i\endash\b\i0  \b0\i Wilderness Lore \endash  \i0 +25 Sneak to every companion when outdoors\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Merchant \b0\i\endash\b\i0  \b0\i Extortion \endash  \i0 Increases the money found on corpses.\cf0\f2\fs24\par
+\kerning0\f3\'b7\f4\tab\cf2\kerning1\b\f0\fs20 Smith \b0\i\endash\b\i0  \b0\i Ever Ready \endash  \i0 Can sharpen weapons via dialogue.\cf0\f2\fs24\par
+\pard\nowidctlpar\cf2\f0\fs20\par
+You can tell what sort of abilities are affecting an NPC by looking at their feet- for \f1 allies\f0 , if they have a \cf6\b Green Circle\b0  \cf2 they've got boosted attacks, a \cf7\b Blue Circle \cf2\b0 means they have extra armour, and a \cf1\b Red Circle\cf6  \cf2\b0 means they're healing faster. For enemies, a \cf8\b Yellow Circle\b0  \cf2 means their movement is restricted, a \b White Circle\b0  means they're more cowardly, and a \cf5\b Purple Circle\cf9  \cf2\b0 indicates any other debuff.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\par
+\b FAQS\cf0\b0\f2\fs24\par
+\cf2\f0\fs20 I've tried to answer every possible reasonable question people could ask- this FAQ, much like the contents, needn't be considered required reading but they might be interesting or useful.\cf0\f2\fs24\par
+\cf1\b\f0\fs20\par
+\b0\i Can I increase or remove the recruitment cap?\cf0\i0\f2\fs24\par
+\cf2\f0\fs20 You can't. Each recruitment slot has to be added via the editor, and involves changing a bunch of scripts. 5 is about right as a maximum IMO, and 3 is really the most practical party size.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\cf1\i Can I disable the information circles?\cf0\i0\f2\fs24\par
+\cf2\f0\fs20 You can. Use \cf7 set CSRvfx to 0 \cf2 in the console to disable them, or set it to 1 to turn them back on.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\cf1\i How does gifting/lending work?\cf0\i0\f2\fs24\par
+\cf2\f0\fs20 The value of your gift or items you're borrowing is multiplied by your target's level, social standing and current relationship to you to get a % odds it'll change their opinion of you up or down one tier.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\cf1\i Why can't I recruit $NPC_Name?\cf0\i0\f2\fs24\par
+\cf2\f0\fs20 You can only recruit living, unique adult NPCs with 'Low Level Processing' enabled. So no children or animals (would you trust Nexus users around them anyway?), no ghosts, etc.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\cf1\i\f1 Can I recruit my spouse/housecarls?\cf0\i0\f2\fs24\par
+\cf2\f1\fs20 You can recruit them, and they cannot lose disposition due to bleedout and storm off.\f0\par
+\par
+\cf1\i\f1 What's the difference between a 'Follower' a 'Recruited Follower'?\cf0\i0\f2\fs24\par
+\cf2\f1\fs20 Some CSR effects (like Aura of Courage) only apply on followers you recruit via CSR. Other effects apply on any and all followers you have, including followers who aren't recruited via CSR. So a Legionary with Shield Wall will protect pet dogs, NPCs who join you during quests and so on.\par
+\f0\par
+\cf1\i I'm having trouble teaching spells with Tutor! Do I need to teach followers all their spells myself?\cf0\i0\f2\fs24\par
+\cf2\f0\fs20 To teach a spell it needs to be equipped and readied- not holstered. Spellcasting NPCs will automatically learn some vanilla spells themselves as they level.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\cf1\i\f1 Why \f0 is Dragonborn Sage unselectable?\cf0\i0\f2\fs24\par
+\cf2\f0\fs20 You can't take Dragonborn Sage until you've got a shout to teach- get Unrelenting Force. \cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\cf1\i What perks does Advanced Tutoring add?\cf0\i0\f2\fs24\par
+\cf2\f0\fs20 The vanilla Armsman/Barbarian/Overdraw/Shield Wall/Agile Defender/Juggernaught 20%/rank boosts, the Augmented Element 25%/rank boosts, and 2 +10 level Illusion boosts. Even if you're using a perk changing mod, the Vanilla perk effects will be added. No fix for this, I'm afraid, beyond not taking the perk.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\cf1\i When an ability says it affects allies, does it affect the originator?\cf0\i0\f2\fs24\par
+\cf2\f0\fs20 Nope, only nearby allies. In addition, multiple copies of the same ability or effect don't stack (e.g. two Stormcloak auras will only increase damage once), to encourage varied parties.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\cf1\i How do I use CSR another mod that edits the Speech perk tree?\cf0\i0\f2\fs24\par
+\cf2\f1\fs20 If you're using SKSE you can activate the \cf4\i Tome of Companionship \cf2\i0 added to Jorrvaskr's Mead Hall (at a table on the south end) to take the perks.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\cf1\i One of my followers has jammed and is refusing to fight!\cf0\i0\f2\fs24\par
+\cf2\f0\fs20 This can very, very occasionally happen when you walk through a door with your weapon drawn; your followers keep their weapons drawn but the game forgets that, and they can't fight because they can't draw their weapons (because they're already drawn). Yeah. To fix this, use the \cf6\i Order Companions \cf2\i0 power whilst looking at the affected companion, and select 'Reset'.\cf0\f2\fs24\par
+\cf2\f0\fs20\par
+\b VERSION LOG\cf0\b0\f2\fs24\par
+\cf2\f0\fs20 1.0\tab Release\par
+\f1 1.1\tab Added bleedout mechanics, added 'Do favour' menu option, tweaked gifted & given items \tab to be automatically equipped, added Perfect Teamwork, added horse-riding, added \tab location comments (for companions with voices covered by the vanilla comments)\par
+1.11\tab Fixed bleedout for non-essential and protected NPCs\par
+1.2\tab Fixed erroneous horse riding, spelling error, rebuilt Dragonborn Sage (broken by patch)\cf0\f2\fs24\par
+}
+ 
